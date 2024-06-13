@@ -8,18 +8,20 @@ The Schrödinger Bridge (SB) concept provides an effective method by training an
 
 The re-implementation aims to explore the scalability and efficiency of UNSB, demonstrating its capability to perform various unpaired I2I translation tasks, particularly focusing on high-resolution images where previous SB models have faced challenges.
 
-## Dataset 
-For our image translation experiments, we have selected the horse2zebra dataset. It's divided in 2 main domains: domain A for horses and domain B for zebras.
+### Qualitative Results
+Qualitative Results on 200 epochs:
 <p align="center">
-  <img src="images/horse2zebra_dataset_composition.png" width="300">
+  <img src="images/zebra1_results.png" alt="Zebra 1" width="30%" />
+  <img src="images/zebra2_results.png" alt="Zebra 2" width="30%" />
+  <img src="images/zebra1_200.png" alt="Zebra 3" width="30%" />
 </p>
-Due to limited computational resources, we opted to train the model on a smaller subset of the original dataset. 
-Specifically:
 
-- **Training Datasets**: each of the horse and zebra categories in the training set contains 200 images, totaling 400 images for model training. 
-- **Testing Datasets**: for testing, each category—horse and zebra—includes 120 images. 
-
-The selection of these subsets was aimed at maintaining a diverse representation of images to ensure that the model can still learn to generalize well across different types of input. 
+Qualitative Results on 400 epochs:
+<p align="center">
+  <img src="images/zebra1_400.png" alt="Zebra 1" width="30%" />
+  <img src="images/zebra2_400.png" alt="Zebra 2" width="30%" />
+  <img src="images/zebra3_results.jpg" alt="Zebra 3" width="30%" />
+</p>
 
 ## Architecture
 The model exhibits a complex structure tailored for generating high-quality images while ensuring that the generated content remains diverse and adheres closely to the real data distribution.
@@ -36,6 +38,19 @@ Below there's a graphical representation of the reimplemented network structure:
 <p align="center">
   <img src="images/structure_network.png">
 </p>
+
+## Dataset 
+For our image translation experiments, we have selected the horse2zebra dataset. It's divided in 2 main domains: domain A for horses and domain B for zebras.
+<p align="center">
+  <img src="images/horse2zebra_dataset_composition.png" width="300">
+</p>
+Due to limited computational resources, we opted to train the model on a smaller subset of the original dataset. 
+Specifically:
+
+- **Training Datasets**: each of the horse and zebra categories in the training set contains 200 images, totaling 400 images for model training. 
+- **Testing Datasets**: for testing, each category—horse and zebra—includes 120 images. 
+
+The selection of these subsets was aimed at maintaining a diverse representation of images to ensure that the model can still learn to generalize well across different types of input. 
 
 ## Repository Content
 * **`extras`**: contains additional networks that were developed during the re-implementation of the paper so to experiment several techniques
@@ -169,21 +184,6 @@ Plotting FID and KID for testing:
 <p align="center">
   <img src="images/FID_test_400.png" alt="FID" width="30%" />
   <img src="images/KID_test_400.png" alt="KID" width="30%" />
-</p>
-
-### Qualitative Results
-Qualitative Results on 200 epochs:
-<p align="center">
-  <img src="images/zebra1_results.png" alt="Zebra 1" width="30%" />
-  <img src="images/zebra2_results.png" alt="Zebra 2" width="30%" />
-  <img src="images/zebra1_200.png" alt="Zebra 3" width="30%" />
-</p>
-
-Qualitative Results on 400 epochs:
-<p align="center">
-  <img src="images/zebra1_400.png" alt="Zebra 1" width="30%" />
-  <img src="images/zebra2_400.png" alt="Zebra 2" width="30%" />
-  <img src="images/zebra3_results.jpg" alt="Zebra 3" width="30%" />
 </p>
 
 ## Final Obervations
