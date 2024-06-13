@@ -63,13 +63,13 @@ Below there's a graphical representation of the reimplemented network structure:
 
 1. Clone the repository:
    ```bash
-    git clone https://github.com/Giuseian/NN-UNSB.git
-    cd NN-UNSB
+    git clone https://github.com/FrancescoSpena/UNSB
+    cd UNSB
     ```
 2. Create and activate a virtual environment:
     ```bash
-    python3 -m venv NN-UNSB-env
-    source NN-UNSB-env/bin/activate
+    python3 -m venv UNSB-env
+    source UNSB-env/bin/activate
     ```
 3. Install requirements:
    ```bash
