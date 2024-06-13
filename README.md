@@ -63,7 +63,7 @@ Below there's a graphical representation of the reimplemented network structure:
 
 1. Clone the repository:
    ```bash
-    git clone https://github.com/FrancescoSpena/UNSB
+    git clone git@github.com:FrancescoSpena/UNSB.git
     cd UNSB
     ```
 2. Create and activate a virtual environment:
