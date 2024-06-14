@@ -9,14 +9,14 @@ The Schrödinger Bridge (SB) concept provides an effective method by training an
 The re-implementation aims to explore the scalability and efficiency of UNSB, demonstrating its capability to perform various unpaired I2I translation tasks, particularly focusing on high-resolution images where previous SB models have faced challenges.
 
 ### Qualitative Results
-Qualitative Results on 200 epochs:
+Qualitative Results on 200 images:
 <p align="center">
   <img src="images/zebra1_results.png" alt="Zebra 1" width="30%" />
   <img src="images/zebra2_results.png" alt="Zebra 2" width="30%" />
   <img src="images/zebra1_200.png" alt="Zebra 3" width="30%" />
 </p>
 
-Qualitative Results on 400 epochs:
+Qualitative Results on 400 images:
 <p align="center">
   <img src="images/zebra1_400.png" alt="Zebra 1" width="30%" />
   <img src="images/zebra2_400.png" alt="Zebra 2" width="30%" />
